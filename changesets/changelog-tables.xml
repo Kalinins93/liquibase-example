@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
     <preConditions>
-        <runningAs  username="vova"/>
+        <runningAs  username="postgres"/>
     </preConditions>
 
-    <changeSet  id="aa"  author="vova">
+    <changeSet  id="aa"  author="postgres">
         <createTable  tableName="users">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
@@ -28,7 +28,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet  id="ab"  author="vova">
+    <changeSet  id="ab"  author="postgres">
         <createTable  tableName="games">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
@@ -49,7 +49,7 @@
     </changeSet>
 
 
-    <changeSet  id="ad"  author="vova">
+    <changeSet  id="ad"  author="postgres">
         <createTable  tableName="roles">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
@@ -63,7 +63,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet  id="ae"  author="vova">
+    <changeSet  id="ae"  author="postgres">
         <createTable  tableName="banned">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
@@ -74,7 +74,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet  id="af"  author="vova">
+    <changeSet  id="af"  author="postgres">
         <createTable  tableName="screenshots">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
@@ -88,7 +88,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet  id="ag"  author="vova">
+    <changeSet  id="ag"  author="postgres">
         <createTable  tableName="libraries">
             <column  name="id"  type="int"  autoIncrement="true">
                 <constraints  primaryKey="true"  nullable="false"/>
